@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include< stdlib>
+#include< stdlib.h>
 
 int sumThreeFive(int x){
   int i;
