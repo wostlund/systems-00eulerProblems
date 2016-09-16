@@ -12,6 +12,23 @@ int sumThreeFive(int x){
   return ans;
 }
 
+int evenFibs(){
+  int x = 1;
+  int y = 2;
+  int i = 2;
+  int ans = 0;
+  while (i < 4000000){
+    i = x + y;
+    if (i%2 == 0){
+      ans += i;
+    }
+    x = y;
+    y = i;
+  }
+  return ans;
+}
+
 int main(){
-  sumThreeFive(10);
+  printf("%d \n", sumThreeFive(10));
+  printf("%d \n", evenFibs());
 }
