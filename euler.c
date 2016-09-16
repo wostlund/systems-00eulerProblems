@@ -28,7 +28,28 @@ int evenFibs(){
   return ans;
 }
 
+int thousandFib(){
+  double x = 1;
+  double y = 2;
+  double i = 2;
+  int ans = 3;
+  int digs = 1;
+  while (digs < 1000){
+    i = x + y;
+    if (i > 10){
+      i/=10;
+      digs++;
+    }
+    x = y;
+    y = i;
+    ans++;
+  }
+  return ans;
+}
+
+
 int main(){
-  printf("%d \n", sumThreeFive(10));
+  printf("%d \n", sumThreeFive(1000));
   printf("%d \n", evenFibs());
+  printf("%d \n", thousandFib());
 }
