@@ -52,4 +52,5 @@ int main(){
   printf("%d \n", sumThreeFive(1000));
   printf("%d \n", evenFibs());
   printf("%d \n", thousandFib());
+  return 0;
 }
